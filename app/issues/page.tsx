@@ -9,7 +9,7 @@ const IssuesPage = () => {
           <TextField.Input placeholder="Title" />
         </TextField.Root>
         <TextArea placeholder="Description" />
-        <Button>Add new issue</Button>
+        <Button>Submit new issue</Button>
       </div>
     </>
   );
