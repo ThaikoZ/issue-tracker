@@ -29,7 +29,8 @@ const IssuePage = async () => {
           {issues.map((issue) => (
             <Table.Row key={issue.id}>
               <Table.RowHeaderCell>
-                {issue.title}
+                <Link href={`/issues/${issue.id}`}>{issue.title}</Link>
+
                 <div className="flex justify-between sm:hidden mt-1">
                   <IssueStatusBadge status={issue.status} />
                   <p>{issue.createdAt.toDateString()}</p>
