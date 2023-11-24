@@ -1,4 +1,5 @@
 "use client";
+import { Container } from "@radix-ui/themes";
 import classNames from "classnames";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -10,11 +11,11 @@ const NavBar = () => {
 
   const links = [
     { title: "Dashboard", href: "/" },
-    { title: "Issues", href: "/issues" },
+    { title: "Issues", href: "/issues/list" },
   ];
 
   return (
-    <nav className="flex space-x-6 border-b mb-5 px-5 h-14 items-center">
+    <nav className="flex space-x-6 border-b mb-5 px-5 h-14 items-center bg-red">
       <Link href="/">
         <AiFillBug />
       </Link>
