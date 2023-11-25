@@ -1,10 +1,7 @@
-import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/prisma/client";
-import {
-  createIssueSchema,
-  patchIssueSchema,
-} from "../../../validationSchemas";
 import { getServerSession } from "next-auth";
+import { NextRequest, NextResponse } from "next/server";
+import { patchIssueSchema } from "../../../validationSchemas";
 import authOptions from "../../auth/authOptions";
 
 export async function PATCH(
